@@ -13,7 +13,7 @@ var jobRoutes = require('./routes/job/job.route');
 var authRoutes = require('./routes/authentication/auth.route');
 
 var app = express();
-const uri = "mongodb+srv://admin:" + process.env.Mongo_Admin_PW + "@dayinthelife-dev.ozz3z.mongodb.net/testdb?retryWrites=true&w=majority";
+const uri = "mongodb+srv://admin:" + process.env.Mongo_Admin_PW + "@dayinthelife-dev.ionl7x1.mongodb.net/?retryWrites=true&w=majority";
 var port = process.env.PORT || 4201;
 //connect to the Database
 try {
