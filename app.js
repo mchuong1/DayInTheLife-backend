@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -11,7 +12,6 @@ var userRoutes = require('./routes/user/user.route');
 var productRoutes = require('./routes/product/product.route');
 var jobRoutes = require('./routes/job/job.route');
 var authRoutes = require('./routes/authentication/auth.route');
-
 var app = express();
 
 if (!process.env.Mongo_Admin_PW) {
