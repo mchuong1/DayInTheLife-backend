@@ -15,8 +15,7 @@ var authRoutes = require('./routes/authentication/auth.route');
 var app = express();
 
 if (!process.env.Mongo_Admin_PW) {
-  console.log("Can't find Mongo PW", process.env.Mongo_Admin_PW);
-  throw new Error("Can't find Mongo PW");
+  throw new Error(`Can't find Mongo PW: ${process.env.Mongo_Admin_PW}`);
 }
 
 const uri = "mongodb+srv://admin:" + process.env.Mongo_Admin_PW + "@dayinthelife-dev.ionl7x1.mongodb.net/?retryWrites=true&w=majority";
